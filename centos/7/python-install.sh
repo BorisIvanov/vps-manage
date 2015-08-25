@@ -12,8 +12,8 @@ cd ..
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
 /usr/local/bin/python3.4 ez_setup.py
 /usr/local/bin/easy_install-3.4 pip
-pip3.4 install --upgrade pip
-/usr/local/bin/pip3.4 install yandexwebdav 
+sudo /usr/local/bin/pip3.4 install --upgrade pip
+sudo /usr/local/bin/pip3.4 install yandexwebdav 
 /usr/local/bin/python3.4 -V
 
 #TODO: need clear after install
