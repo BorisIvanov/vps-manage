@@ -1,7 +1,7 @@
 #!/bin/bash
-yum -y update
-yum -y groupinstall "Development tools"
-yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+sudo yum -y update
+sudo yum -y groupinstall "Development tools"
+sudo yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
 cd ~
 wget https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz --no-check-certificate
 tar xf Python-$PYTHON_VERSION.tar.xz
@@ -12,5 +12,8 @@ cd ..
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
 /usr/local/bin/python3.4 ez_setup.py
 /usr/local/bin/easy_install-3.4 pip
+pip3.4 install --upgrade pip
 /usr/local/bin/pip3.4 install yandexwebdav 
 /usr/local/bin/python3.4 -V
+
+#TODO: need clear after install
